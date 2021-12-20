@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragment.seller.SellerOrderFragment">
+
+    <EditText
+        android:id="@+id/edt_search_order_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/img_seller_filter"
+        android:background="@drawable/bg_reg_2"
+        android:drawableStart="@drawable/ic_search_gray"
+        android:hint="@string/searching_here"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/img_seller_filter"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_dashboard_gray" />
+
+    <TextView
+        android:id="@+id/tv_show_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/img_seller_filter"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_seller_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_show_order_status"/>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_user_chat_log">40dp</dimen>
+    <dimen name="image_latest_row">65dp</dimen>
+    <dimen name="image_status">16dp</dimen>
+</resources>

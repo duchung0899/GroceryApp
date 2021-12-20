@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="3dp"
+    app:mode="same_level"
+    app:dragEdge="right"
+    android:id="@+id/swl_order_item">
+
+    <!-- Your secondary layout here -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:maxLines="1"
+            android:text="Rating"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/ic_review_white"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Your main layout here -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_item_order"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shop"/>
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/img_item_order"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_item_quantity_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/img_item_order"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_toEndOf="@id/img_item_order"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_item_quantity_order"/>
+
+    </RelativeLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

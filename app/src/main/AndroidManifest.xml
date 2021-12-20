@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hungngo.groceryappkotlin"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/shop"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/shop"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GroceryAppKotlin.NoActionBar">
+        <activity android:name=".activity.ChatLogActivity"/>
+        <activity android:name=".activity.OrderDetailUserActivity" />
+        <activity android:name=".activity.UserOrderActivity" />
+        <activity android:name=".activity.OrderDetailSellerActivity" />
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:windowSoftInputMode="stateHidden" /> <!-- hide keyboard by default -->
+        <activity android:name=".activity.ShopDetailActivity" />
+        <activity android:name=".activity.AddProductActivity" />
+        <activity android:name=".activity.MainBuyerActivity" />
+        <activity android:name=".activity.MainSellerActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity" />
+        <activity android:name=".activity.RegisterUserActivity" />
+        <activity android:name=".activity.RegisterSellerActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <!-- register service to run in background-->
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

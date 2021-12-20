@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">GroceryAppKotlin</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="recover_password">Recover Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="country">Country</string>
+    <string name="complete_address">Complete Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="shopname">Shop Name</string>
+    <string name="add_product">Add Product</string>
+    <string name="update_product">Update Product</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity eg: 1, kg, l,..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="search_in_shop">Search in shop</string>
+    <string name="chat">Chat</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="delete">Delete</string>
+    <string name="order_id">Order ID</string>
+    <string name="client_name">Client Name</string>
+    <string name="start_date">Start Date</string>
+    <string name="status">Order Status</string>
+    <string name="address">Address</string>
+    <string name="total">Total</string>
+    <string name="more">more...</string>
+    <string name="rating">Rating</string>
+    <string name="confirm">Confirm</string>
+    <string name="delivery">Delivery</string>
+    <string name="my_orders">My Orders</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="searching_here">Searching here</string>
+    <string name="all">All</string>
+
+    <!--    item in bottom navigation - seller-->
+    <string name="tab_1">Home</string>
+    <string name="tab_2">Order</string>
+    <string name="tab_3">Message</string>
+    <string name="tab_4">Me</string>
+    <string name="message_toolbar">Message</string>
+    <string name="account_info">My Account Information</string>
+    <string name="order_notification_settings">Order Notification Settings</string>
+    <string name="message_notification_settings">Mesaage Notification Settings</string>
+
+
+</resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterSellerActivity">
+
+    <!-- toolBar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_reg_1"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/img_rgt_seller_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register seller"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:id="@+id/img_register_location_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_location_white"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_key"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/bg_circle01"
+        android:src="@drawable/ic_key_white"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_below="@id/img_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/img_seller"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_person_gray"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                app:c_border="true"
+                app:c_border_color="@color/colorPrimary"
+                app:c_border_width="1dp"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/edt_register_user_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/full_name"
+                android:padding="10dp"
+                android:layout_margin="16dp"
+                android:layout_below="@id/img_seller"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_person_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/edt_register_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/shopname"
+                android:padding="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_below="@id/edt_register_user_fullname"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_store_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/edt_seller_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/PhoneNumber"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:layout_below="@id/edt_register_shopname"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_phone_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/edt_deliveryFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Delivery Fee"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:layout_below="@id/edt_seller_phone"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_local_shipping_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_deliveryFee"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_seller_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:inputType="textPostalAddress"
+                    android:hint="@string/country"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_reg_2"
+                    app:drawableStartCompat="@drawable/ic_location_gray"
+                    android:drawablePadding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/edt_seller_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:inputType="textPostalAddress"
+                    android:hint="@string/state"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_reg_2"
+                    app:drawableStartCompat="@drawable/ic_location_gray"
+                    android:drawablePadding="5dp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/edt_seller_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textPostalAddress"
+                    android:hint="@string/city"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_reg_2"
+                    app:drawableStartCompat="@drawable/ic_location_gray"
+                    android:drawablePadding="5dp"
+                    android:autofillHints="" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_seller_complete_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_address"
+                android:inputType="textPostalAddress"
+                android:hint="@string/complete_address"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_location_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/edt_seller_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_seller_complete_address"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:layout_margin="16dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_email_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/edt_seller_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_seller_email"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_lock_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/edt_seller_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_seller_password"
+                android:inputType="textPassword"
+                android:hint="@string/confirm_password"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_reg_2"
+                app:drawableStartCompat="@drawable/ic_lock_gray"
+                android:drawablePadding="5dp"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/btn_seller_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_margin="16dp"
+                android:minWidth="120dp"
+                android:text="@string/register"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/edt_seller_repassword"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

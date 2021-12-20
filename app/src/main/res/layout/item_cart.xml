@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:mode="same_level"
+    app:dragEdge="right"
+    android:id="@+id/swl_order_item">
+
+    <!-- Your secondary layout here -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_cart_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:background="@color/red"
+            android:text="@string/delete"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/ic_delete_gray"
+            app:drawableTint="@color/white" />
+    </LinearLayout>
+
+    <!-- Your main layout here -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_cart_item"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/snack" />
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_cart_item"
+            android:layout_marginStart="16dp"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_item_unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_cart_item"
+            android:layout_below="@id/tv_item_title"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/price"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_item_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_cart_item"
+            android:layout_below="@id/tv_item_unit_price"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/price"
+            android:textSize="18sp"
+            android:textColor="@color/red"/>
+
+        <LinearLayout
+            android:id="@+id/ll_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/tv_item_total"
+            android:layout_alignBottom="@id/tv_item_total"
+            android:layout_marginStart="16dp">
+
+            <ImageButton
+                android:id="@+id/img_item_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_minus_white"
+                android:background="@color/colorPrimary"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_item_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/img_item_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_white"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

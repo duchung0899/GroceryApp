@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainBuyerActivity">
+
+    <!-- toolBar -->
+    <RelativeLayout
+        android:id="@+id/rl_buyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_reg_1"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_buyer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:id="@+id/img_buyer_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_logout_white"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_ab"
+        android:layout_below="@id/rl_buyer"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bottom_ab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/bottom_menu"
+            app:labelVisibilityMode="labeled"
+            android:background="?android:attr/windowBackground"
+            android:foreground="?attr/selectableItemBackground"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</RelativeLayout>

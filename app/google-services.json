@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393249636652",
+    "project_id": "grocery-6e843",
+    "storage_bucket": "grocery-6e843.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393249636652:android:3e0b0a84195631ff18ec89",
+        "android_client_info": {
+          "package_name": "com.hungngo.groceryappkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393249636652-i58lca8rqguqvuodskeh8pkbekmq9ub9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjD2eMZl2ljd40E2sSP1GVpu96DUgVqdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393249636652-i58lca8rqguqvuodskeh8pkbekmq9ub9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
