@@ -42,7 +42,7 @@ object MyCommon {
     val orderStatesList = mutableListOf("Confirm", "Pending", "Completed", "Cancel", "Review")
 
     // firebase cloud message
-    const val FCM_KEY = "AAAAW4-BQSw:APA91bGiTJ0U1A07yqygGPByh8uNT5ya0W5BEQIvycBM_au95FH5Z3V-JmmaYchU-al5SuXwB0vSJ8wL-ux9Dce1tNtSx-axDo0YLd7HLhtP9BGPzqNaDFBok_ba1AD-HIEzODMLInlQ"
+    const val FCM_KEY = ""
     const val FCM_TOPIC_ORDER = "PUSH_NOTIFICATIONS"
     const val FCM_TOPIC_MESSAGE = "MESSAGE"
 
